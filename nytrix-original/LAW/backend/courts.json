@@ -1,0 +1,38 @@
+[
+  {
+    "id": "court-1",
+    "name": "Delhi High Court",
+    "type": "High Court",
+    "state": "Delhi",
+    "district": "New Delhi",
+    "localArea": "Sher Shah Road",
+    "address": "Sher Shah Road, Near I.T.O., New Delhi - 110001",
+    "phone": "011-23385657",
+    "email": "registry.dhc@nic.in",
+    "timings": "10:00 AM - 5:00 PM",
+    "latitude": 28.6315,
+    "longitude": 77.2454,
+    "jurisdiction": "Entire National Capital Territory of Delhi",
+    "established": "1966",
+    "isActive": true,
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  },
+  {
+    "id": "court-2",
+    "name": "Mumbai High Court",
+    "type": "High Court",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "localArea": "Fort",
+    "address": "Fort, Mumbai - 400001",
+    "phone": "022-22612345",
+    "email": "registry.bhc@nic.in",
+    "timings": "10:30 AM - 5:30 PM",
+    "latitude": 18.9291,
+    "longitude": 72.8329,
+    "jurisdiction": "Maharashtra and Goa (Bench at Goa)",
+    "established": "1862",
+    "isActive": true,
+    "createdAt": "2024-01-01T10:00:00.000Z"
+  }
+]

@@ -1,0 +1,54 @@
+Men's Rights Knowledge Base Report
+
+Date: February 24, 2026
+
+Categories:
+- Rights
+- Awareness
+- Protection
+- Documentation
+
+Sample Knowledge Cards:
+
+1. False Accusations - Know Your Rights
+   Category: Protection
+   Summary: Understanding how to respond to and defend against false criminal accusations.
+   Key Points:
+   - Presumption of innocence
+   - Right to remain silent
+   - Burden of proof
+
+2. Cyber Harassment & Online Abuse
+   Category: Protection
+   Summary: How to identify, report, and take legal action against cyber harassment.
+   Key Points:
+   - Cyber harassment is a criminal offense
+   - Online defamation can be addressed
+   - IT Act, 2000 protections
+
+3. Male Domestic Violence Victims
+   Category: Awareness
+   Summary: Understanding domestic violence against men and available legal protections.
+   Key Points:
+   - Men can be victims
+   - Protection Orders available
+   - Compensation can be sought
+
+4. Male Inheritance and Succession Rights
+   Category: Rights
+   Summary: Understanding equal succession rights for men under Indian law.
+   Key Points:
+   - Equal right to inherit
+   - Daughters have equal rights
+   - Property ownership is gender-neutral
+
+5. Fathers Rights in Child Custody
+   Category: Rights
+   Summary: Understanding equal custody rights for fathers under Indian law.
+   Key Points:
+   - Equal legal rights to custody
+   - Joint custody is increasingly awarded
+   - Visitation rights protected
+
+---
+This report summarizes the structure and sample content of the Men's Rights Knowledge Base application, including categories and representative knowledge cards.
