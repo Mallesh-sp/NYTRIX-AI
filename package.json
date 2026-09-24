@@ -1,0 +1,8 @@
+{
+  "name": "nytrix-ai",
+  "private": true,
+  "version": "2.0.0",
+  "scripts": {
+    "build": "cd nytrix-original/LAW && npm install && npm run build"
+  }
+}

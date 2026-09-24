@@ -1,0 +1,10 @@
+{
+  "buildCommand": "cd nytrix-original/LAW && npm install && npm run build",
+  "outputDirectory": "nytrix-original/LAW/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
