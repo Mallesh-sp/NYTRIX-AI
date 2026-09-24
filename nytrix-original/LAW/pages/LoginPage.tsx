@@ -151,9 +151,9 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 flex items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 flex items-center justify-center p-4 py-12 relative overflow-x-hidden overflow-y-auto">
       {/* Background Decorative Symbols */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {/* Large Scale Icon - Top Left */}
         <div className="absolute top-10 left-10 opacity-10 text-emerald-400">
           <Scale className="w-40 h-40" strokeWidth={1.5} />

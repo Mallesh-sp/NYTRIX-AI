@@ -144,9 +144,9 @@ const PremiumLoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
   const Icon = currentMode.icon;
 
   return (
-    <div className="min-h-screen bg-[#0a0d14] flex relative overflow-hidden">
+    <div className="min-h-screen bg-[#0a0d14] flex flex-col lg:flex-row relative overflow-x-hidden overflow-y-auto">
       {/* Premium Background */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
+      <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(59,130,246,0.12),transparent)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_100%_50%,rgba(6,182,212,0.08),transparent)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_0%_100%,rgba(99,102,241,0.08),transparent)]" />
@@ -180,7 +180,7 @@ const PremiumLoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
       </div>
 
       {/* Left Side - Branding */}
-      <div className="hidden lg:flex lg:w-1/2 relative z-10 flex-col items-center justify-center p-12">
+      <div className="hidden lg:flex lg:w-1/2 relative z-10 flex-col items-center justify-center p-12 lg:sticky lg:top-0 lg:h-screen">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -255,12 +255,12 @@ const PremiumLoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
       </div>
 
       {/* Right Side - Login Form */}
-      <div className="flex-1 flex items-center justify-center p-6 lg:p-12 relative z-10">
+      <div className="flex-1 flex items-center justify-center p-4 sm:p-6 lg:p-12 relative z-10 min-h-screen py-10 lg:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="w-full max-w-md"
+          className="w-full max-w-md my-auto"
         >
           {/* Mobile Logo */}
           <div className="lg:hidden text-center mb-8">
