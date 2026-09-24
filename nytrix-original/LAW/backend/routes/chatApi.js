@@ -212,8 +212,50 @@ router.post('/chat', async (req, res) => {
  * Generates structured, actionable legal intelligence when external LLMs are unavailable
  */
 function generateLocalLegalFallback(query) {
-  const q = (query || '').toLowerCase();
+  const q = (query || '').toLowerCase().trim();
   
+  // 1. Greetings & Pleasantries
+  const greetings = ['hi', 'hello', 'hey', 'vanakkam', 'வணக்கம்', 'namaste', 'namaskaram', 'good morning', 'good afternoon', 'good evening', 'hi nytrix', 'hello nytrix', 'start', 'help', 'hi sir', 'hello sir'];
+  if (greetings.includes(q) || q === 'hi!' || q === 'hello!' || q.startsWith('hi ') || q.startsWith('hello ') || q.startsWith('hey ')) {
+    return `Hello! 👋 Welcome to **Nytrix AI** — your AI Legal Intelligence and Legal Rights Assistant for India.
+
+I am here to guide you with complete legal awareness, applicable laws, and step-by-step remedies for your situation.
+
+### 💡 What I can help you with:
+* ⚖️ **Indian Laws & Sections**: Detailed explanation of IPC / Bharatiya Nyaya Sanhita (BNS), CrPC / BNSS, IT Act, Labour Laws, Consumer Protection, etc.
+* 🚨 **Legal Action & Remedies**: What actions you can take if you're facing false accusations, extortion/blackmail, financial fraud, police harassment, workplace disputes, or marital issues.
+* 📋 **Step-by-Step Action Plan**: How to file an FIR, send an advocate legal notice, apply for Anticipatory Bail, or approach the High Court.
+* 📁 **Evidence Checklist**: What documents, audio recordings, or WhatsApp chats you need to preserve.
+
+---
+✨ **How can I help you today?** Please share your problem, situation, or legal question in **English**, **தமிழ் (Tamil)**, or **Tanglish**!`;
+  }
+
+  // 2. Identity & About
+  if (q.includes('who are you') || q.includes('who made you') || q.includes('who created you') || q.includes('owner') || q.includes('about you') || q === 'who is nytrix') {
+    return `I am **Nytrix AI**, India's premier Legal Intelligence & Legal Action Platform.
+
+* 🏛️ **Created & Owned by**: **MALLESH SP**
+* 💻 **Built by**: **Keseven, Manojkumar, and Jainithil**
+* 🎯 **Mission**: Empowering Indian citizens with clear legal awareness, verified statutory sections (IPC/BNS, CrPC/BNSS), lawful steps to take, and defense strategies.
+
+You can ask me any legal questions or share any situation you are facing. How can I assist you today? ⚖️`;
+  }
+
+  // 3. Thanks & Gratitude
+  if (q.includes('thank') || q.includes('nandri') || q === 'thx' || q === 'thanks a lot') {
+    return `You're very welcome! 🙏 Glad I could be of help.
+
+If you have any further questions about Indian laws, court procedures, or evidence collection, feel free to ask anytime. Stay informed, stay safe, and remember: knowing your rights is your strongest defense! ⚖️`;
+  }
+
+  // 4. "How are you"
+  if (q.includes('how are you') || q.includes('epdi iruka') || q.includes('how r u')) {
+    return `I'm doing great, thank you for asking! 😊 I'm fully ready to assist you with any legal queries or advice under Indian law.
+
+What situation or legal question would you like to explore today?`;
+  }
+
   // Specific specialized scenarios
   if (q.includes('498a') || q.includes('dowry') || q.includes('cruelty') || q.includes('marital') || q.includes('wife') || q.includes('divorce') || q.includes('custody') || q.includes('maintenance') || q.includes('pondati') || q.includes('kalyanam') || q.includes('kudumbam')) {
     return `### ⚖️ 1. Applicable Indian Laws & Sections (பொருந்தும் சட்டங்கள்)
