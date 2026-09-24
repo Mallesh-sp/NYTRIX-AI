@@ -702,13 +702,19 @@ select:focus-visible {
   overflow-x: hidden;
 }
 
-/* Prevent Body Scroll */
-html, body {
-  overflow: hidden;
-  height: 100%;
+/* Allow Smooth Page Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #root {
-  height: 100%;
-  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
